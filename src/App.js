@@ -52,6 +52,11 @@ const App  = () =>  {
           }} 
           todos={todos} 
         />
+        <div className="dragdrop-cue">
+        Drag &amp; Drop
+        <br />
+        &lt;--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;
+        </div>
         <CompletedList
           completed={completed}
         />

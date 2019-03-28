@@ -22,6 +22,8 @@ const ActiveList = ({ todos, saveTodo, deleteTodo }) => {
         if(!value) return
 
         saveTodo(value)
+
+        setValue('')
     }
 
     return (

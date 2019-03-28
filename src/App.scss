@@ -1,9 +1,17 @@
 .App {
+    height: 100vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
+
+    .dragdrop-cue {
+        text-align: center;
+        color: #cfcfcf;
+        font-size: 12px;
+        width: 150px;
+    }
 
     .todo-list {
         position: relative;
@@ -62,6 +70,10 @@
                 font-style: italic;
             }
 
+            &:focus {
+                outline: none;
+            }
+
         }
 
         button {
@@ -74,6 +86,25 @@
             &:hover {
                 background-color: #90cceb;
             }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .App {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .App {
+
+        .dragdrop-cue {
+            display: none;
         }
     }
 }
