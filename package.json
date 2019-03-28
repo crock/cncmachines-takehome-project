@@ -2,12 +2,18 @@
   "name": "react-todo-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://crock.github.io/cncmachines-takehome-project",
   "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
     "react": "^16.8.5",
+    "react-beautiful-dnd": "^10.1.1",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

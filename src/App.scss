@@ -1,0 +1,79 @@
+.App {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .todo-list {
+        position: relative;
+        padding: 10px;
+        margin: 25px 10px;
+        width: 200px;
+        min-height: 400px;
+        //border: 1px solid red;
+        box-shadow: 3px 3px 10px 3px #ececec;
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            width: inherit;
+            padding-left: 0;
+            //border: 1px solid yellow;
+
+            li {
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                background-color: #f8f8f8;
+                margin-bottom: 2px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .form-group {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        //border: 1px solid blue;
+
+        input {
+            width: 150px;
+            border: 1px solid #5a5a5a;
+            border-radius: 0;
+            height: 40px;
+            padding: 0;
+            color: black;
+            text-indent: 10px;
+
+            &::-webkit-input-placeholder,
+            &::placeholder {
+                text-indent: 10px;
+                color: lightslategrey;
+                font-style: italic;
+            }
+
+        }
+
+        button {
+            width: calc(200px - 150px - 2px);
+            height: 42px;
+            border: 1px solid #5a5a5a;
+            border-radius: 0;
+            background-color: #9bdcfc;
+
+            &:hover {
+                background-color: #90cceb;
+            }
+        }
+    }
+}
